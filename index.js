@@ -7,6 +7,6 @@
  * see the LICENSE file.
  */
 
-module.exports.Command = require("./lib/command");
-module.exports.CommandResult = require("./lib/commandResult");
-module.exports.CommandBuilder = require("./lib/commandBuilder");
+module.exports.Command = require("./lib/Command");
+module.exports.CommandResult = require("./lib/CommandResult");
+module.exports.CommandBuilder = require("./lib/CommandBuilder");
