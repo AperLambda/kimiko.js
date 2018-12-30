@@ -1,0 +1,19 @@
+{
+  "name": "kimiko",
+  "version": "1.0.0",
+  "description": "A command system, based on https://github.com/AperLambda/kimiko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AperLambda/kimiko.js.git"
+  },
+  "author": "Shad, LambdAurora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AperLambda/kimiko.js/issues"
+  },
+  "homepage": "https://github.com/AperLambda/kimiko.js#readme"
+}
