@@ -10,8 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/AperLambda/kimiko.js.git"
   },
-  "author": "Shad, LambdAurora",
-  "license": "ISC",
+  "author": "Shad <adrien.burgun@orange.fr>",
+  "contributors": [
+    "LambdAurora <aurora42lambda@gmail.com>"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AperLambda/kimiko.js/issues"
   },
