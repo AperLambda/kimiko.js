@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AperLambda/kimiko.js/issues"
   },
-  "homepage": "https://github.com/AperLambda/kimiko.js#readme"
+  "homepage": "https://github.com/AperLambda/kimiko.js#readme",
+  "dependencies": {
+    "jsdoc": "^3.5.5"
+  }
 }

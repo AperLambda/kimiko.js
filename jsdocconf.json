@@ -2,5 +2,9 @@
   "plugins": ["plugins/markdown"],
   "source": {
     "include": ["index.js", "lib/", "README.md"]
+  },
+  "opts": {
+    "destination": "docs/",
+    "template": "dependencies/jsdoc-materialize/"
   }
 }

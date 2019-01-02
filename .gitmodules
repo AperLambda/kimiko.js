@@ -1,0 +1,3 @@
+[submodule "dependencies/jsdoc-materialize"]
+	path = dependencies/jsdoc-materialize
+	url = https://github.com/AperLambda/jsdoc-materialize.git

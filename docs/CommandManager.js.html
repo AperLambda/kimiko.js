@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>CommandManager.js - Documentation</title>
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-okaidia.min.css" />
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="blue-grey darken-4">
+    <header>
+      <nav class="blue-grey darken-3">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+      </nav>
+    </header>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><h3>Classes</h3></li><li id="Command-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="Command.html">Command</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="Command-addSubCommand-nav"><a href="Command.html#addSubCommand">addSubCommand</a></li><li data-type="method" id="Command-getAliases-nav"><a href="Command.html#getAliases">getAliases</a></li><li data-type="method" id="Command-getDescription-nav"><a href="Command.html#getDescription">getDescription</a></li><li data-type="method" id="Command-getExecutor-nav"><a href="Command.html#getExecutor">getExecutor</a></li><li data-type="method" id="Command-getParent-nav"><a href="Command.html#getParent">getParent</a></li><li data-type="method" id="Command-getPermissionRequired-nav"><a href="Command.html#getPermissionRequired">getPermissionRequired</a></li><li data-type="method" id="Command-getSubCommand-nav"><a href="Command.html#getSubCommand">getSubCommand</a></li><li data-type="method" id="Command-getSubCommands-nav"><a href="Command.html#getSubCommands">getSubCommands</a></li><li data-type="method" id="Command-getTabCompleter-nav"><a href="Command.html#getTabCompleter">getTabCompleter</a></li><li data-type="method" id="Command-getUsage-nav"><a href="Command.html#getUsage">getUsage</a></li><li data-type="method" id="Command-handleExecution-nav"><a href="Command.html#handleExecution">handleExecution</a></li><li data-type="method" id="Command-hasParent-nav"><a href="Command.html#hasParent">hasParent</a></li><li data-type="method" id="Command-hasSubCommand-nav"><a href="Command.html#hasSubCommand">hasSubCommand</a></li><li data-type="method" id="Command-matchesName-nav"><a href="Command.html#matchesName">matchesName</a></li><li data-type="method" id="Command-onTabComplete-nav"><a href="Command.html#onTabComplete">onTabComplete</a></li><li data-type="method" id="Command-removeSubCommand-nav"><a href="Command.html#removeSubCommand">removeSubCommand</a></li><li data-type="method" id="Command-setAliases-nav"><a href="Command.html#setAliases">setAliases</a></li><li data-type="method" id="Command-setDescription-nav"><a href="Command.html#setDescription">setDescription</a></li><li data-type="method" id="Command-setExecutor-nav"><a href="Command.html#setExecutor">setExecutor</a></li><li data-type="method" id="Command-setParent-nav"><a href="Command.html#setParent">setParent</a></li><li data-type="method" id="Command-setPermissionRequired-nav"><a href="Command.html#setPermissionRequired">setPermissionRequired</a></li><li data-type="method" id="Command-setTabCompleter-nav"><a href="Command.html#setTabCompleter">setTabCompleter</a></li><li data-type="method" id="Command-setUsage-nav"><a href="Command.html#setUsage">setUsage</a></li></ul></div></li></ul></li><li id="CommandBuilder-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandBuilder.html">CommandBuilder</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandBuilder-build-nav"><a href="CommandBuilder.html#build">build</a></li><li data-type="method" id="CommandBuilder-setAliases-nav"><a href="CommandBuilder.html#setAliases">setAliases</a></li><li data-type="method" id="CommandBuilder-setDescription-nav"><a href="CommandBuilder.html#setDescription">setDescription</a></li><li data-type="method" id="CommandBuilder-setExecutor-nav"><a href="CommandBuilder.html#setExecutor">setExecutor</a></li><li data-type="method" id="CommandBuilder-setPermissionRequired-nav"><a href="CommandBuilder.html#setPermissionRequired">setPermissionRequired</a></li><li data-type="method" id="CommandBuilder-setTabCompleter-nav"><a href="CommandBuilder.html#setTabCompleter">setTabCompleter</a></li><li data-type="method" id="CommandBuilder-setUsage-nav"><a href="CommandBuilder.html#setUsage">setUsage</a></li></ul></div></li></ul></li><li id="CommandManager-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandManager.html">CommandManager</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandManager-clearCommands-nav"><a href="CommandManager.html#clearCommands">clearCommands</a></li><li data-type="method" id="CommandManager-getCommand-nav"><a href="CommandManager.html#getCommand">getCommand</a></li><li data-type="method" id="CommandManager-getCommands-nav"><a href="CommandManager.html#getCommands">getCommands</a></li><li data-type="method" id="CommandManager-hasCommand-nav"><a href="CommandManager.html#hasCommand">hasCommand</a></li><li data-type="method" id="CommandManager-register-nav"><a href="CommandManager.html#register">register</a></li></ul></div></li></ul></li><li id="CommandResult-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandResult.html">CommandResult</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandResult-call-nav"><a href="CommandResult.html#call">call</a></li></ul></div></li></ul></li><li id="ResourceName-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="ResourceName.html">ResourceName</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="ResourceName-equals-nav"><a href="ResourceName.html#equals">equals</a></li><li data-type="method" id="ResourceName-toString-nav"><a href="ResourceName.html#toString">toString</a></li></ul></div></li></ul></li>
+    </ul>
+    <main>
+      
+        <h1 class="page-title center white-text light">
+          CommandManager.js
+        </h1>
+      
+      
+    <section>
+  <article>
+    <pre><code class="lang-js">
+      /*
+ * Copyright © 2018 AperLambda &lt;aperlambda@gmail.com>
+ *
+ * This file is part of kimiko.js.
+ *
+ * Licensed under the MIT license. For more information,
+ * see the LICENSE file.
+ */
+
+const ResourceName = require("./ResourceName");
+
+/**
+ * The CommandManager class; it allows you to store several {@link Command}s in one place
+ */
+class CommandManager
+{
+  /**
+   * Creates a new `CommandManager` instance
+   */
+  constructor()
+  {
+    this.commands = [];
+  }
+
+  /**
+   * Adds a {@link Command} to `CommandManager`'s `Command`s
+   * @param {Command} command The command to be added
+   */
+  register(command)
+  {
+    this.commands.push(command);
+  }
+
+  /**
+   * Returns whether a {@link Command} exists within `CommandManager`'s `Command`s
+   * @param {(Command|String|ResourceName)} command Command or name/alias to look for
+   * @return {boolean} Whether or not the asked command was found
+   */
+  hasCommand(command)
+  {
+    if (typeof command == "string" || command instanceof ResourceName) {
+      return !!this.commands.find((c) => c.matchesName(command));
+    } else if (typeof command == "object")
+    {
+      return this.commands.includes(command);
+    }
+    return false;
+  }
+
+  /**
+   * Matches and returns a {@link Command} from `CommandManager`'s `Command`s if found
+   * @param {(String|ResourceName)} name The name or alias of the command to find
+   * @return {?Command} The asked command, if found
+   */
+  getCommand(name)
+  {
+    if (typeof name != "string" &amp;&amp; !(command instanceof ResourceName)) {
+      throw new Error(`kimiko.js, CommandManager::getCommand(name): 'name' should be a string or a ResourceName, got ${typeof name}`);
+    }
+    return this.commands.find((c) => c.matchesName(name));
+  }
+
+  /**
+   * Returns all of the `CommandManager`'s registered {@link Command}s
+   * @return {Command[]} All of them!
+   */
+  getCommands()
+  {
+    return this.commands;
+  }
+
+  /**
+   * Gets rid of all the registered {@link Command}s
+   */
+  clearCommands()
+  {
+    this.commands = [];
+  }
+}
+
+module.exports = CommandManager;
+
+    </code></pre>
+  </article>
+</section>
+
+  
+
+    </div>
+    
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+		<script>M.AutoInit();</script>
+  </body>
+</html>
