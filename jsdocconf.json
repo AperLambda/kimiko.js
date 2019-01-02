@@ -6,5 +6,9 @@
   "opts": {
     "destination": "docs/",
     "template": "dependencies/jsdoc-materialize/"
+  },
+  "materialize": {
+    "header": "header.html",
+    "name": "kimiko.js"
   }
 }

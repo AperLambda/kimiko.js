@@ -8,7 +8,8 @@ header, main, footer {
   }
 }
 
-ul.sidenav > li > h3 {
+ul.sidenav > li > h3,
+ul.sidenav > li > h4 {
   padding-left: 16px;
 }
 
@@ -16,4 +17,26 @@ li.active > a > .if-unactive,
 li:not(.active) > a > .if-active {
   visibility: hidden;
   position: absolute;
+}
+
+.readme {
+  color: white;
+  font-weight: 300;
+}
+
+.readme h1 {
+  text-align: center;
+}
+
+span.signature-attributes,
+span.nullable-signature {
+  padding-left: 0.3em;
+  padding-right: 0.1em;
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+span.rest-signature {
+  color: #d0d0d0;
+  font-weight: 400;
 }
