@@ -17,15 +17,76 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom coloring & stuff -->
+    <style>
+
+:root {
+  --second-color: #a0a0a0;
+}
+
+.main-bg {
+  background: #262A32;
+}
+
+.main-alternate-bg {
+  background: #24272E;
+}
+
+.nav-bg {
+  background: #212329;
+}
+
+.sidenav-bg {
+  background: #22252B;
+}
+
+.sidenav-alternate-bg {
+  background: #24272E;
+}
+
+.main-color {
+  color: white;
+}
+
+.nav-color {
+  color: white;
+}
+
+.sidenav-title-color {
+  color: #9e9e9e;
+}
+
+.sidenav-title-alternate-color {
+  color: #bdbdbd;
+}
+
+.sidenav-color {
+  color: white;
+}
+
+.sidenav-alternate-color {
+  color: white;
+}
+
+.title-color {
+  color: white;
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+    </style>
   </head>
-  <body class="blue-grey darken-4">
+  <body class="main-bg">
     <header>
-      <nav class="blue-grey darken-3">
+      <nav class="nav-bg">
         <div class="nav-wrapper">
-          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons nav-color">menu</i></a>
           
             
-  <div class="brand-logo" style="display: flex; align-items: center;">
+  <div class="brand-logo" style="display: flex; align-items: center; font-weight: bold; font-family: 'Open Sans'">
     <img class="circle responsive-img" style="max-height: 64px !important; max-width: 32px; padding: 15px 0 !important; margin-left: 7px; margin-right: 2px;" src="https://AperLambda.github.io/aperlambda.png">
     <a href="/" class="brand-title" style="margin-left: 5px;">AperLambda</a>
   </div>
@@ -34,28 +95,38 @@
         </div>
       </nav>
     </header>
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-      <li><a href="index.html"><h3 class="grey-text text-darken-1">kimiko.js</h3></a></li><li class="grey-text text-darken-2"><h4>Classes</h4></li><li id="Command-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="Command.html">Command</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="Command-addSubCommand-nav"><a href="Command.html#addSubCommand">addSubCommand</a></li><li data-type="method" id="Command-getAliases-nav"><a href="Command.html#getAliases">getAliases</a></li><li data-type="method" id="Command-getDescription-nav"><a href="Command.html#getDescription">getDescription</a></li><li data-type="method" id="Command-getExecutor-nav"><a href="Command.html#getExecutor">getExecutor</a></li><li data-type="method" id="Command-getParent-nav"><a href="Command.html#getParent">getParent</a></li><li data-type="method" id="Command-getPermissionRequired-nav"><a href="Command.html#getPermissionRequired">getPermissionRequired</a></li><li data-type="method" id="Command-getSubCommand-nav"><a href="Command.html#getSubCommand">getSubCommand</a></li><li data-type="method" id="Command-getSubCommands-nav"><a href="Command.html#getSubCommands">getSubCommands</a></li><li data-type="method" id="Command-getTabCompleter-nav"><a href="Command.html#getTabCompleter">getTabCompleter</a></li><li data-type="method" id="Command-getUsage-nav"><a href="Command.html#getUsage">getUsage</a></li><li data-type="method" id="Command-handleExecution-nav"><a href="Command.html#handleExecution">handleExecution</a></li><li data-type="method" id="Command-hasParent-nav"><a href="Command.html#hasParent">hasParent</a></li><li data-type="method" id="Command-hasSubCommand-nav"><a href="Command.html#hasSubCommand">hasSubCommand</a></li><li data-type="method" id="Command-matchesName-nav"><a href="Command.html#matchesName">matchesName</a></li><li data-type="method" id="Command-onTabComplete-nav"><a href="Command.html#onTabComplete">onTabComplete</a></li><li data-type="method" id="Command-removeSubCommand-nav"><a href="Command.html#removeSubCommand">removeSubCommand</a></li><li data-type="method" id="Command-setAliases-nav"><a href="Command.html#setAliases">setAliases</a></li><li data-type="method" id="Command-setDescription-nav"><a href="Command.html#setDescription">setDescription</a></li><li data-type="method" id="Command-setExecutor-nav"><a href="Command.html#setExecutor">setExecutor</a></li><li data-type="method" id="Command-setParent-nav"><a href="Command.html#setParent">setParent</a></li><li data-type="method" id="Command-setPermissionRequired-nav"><a href="Command.html#setPermissionRequired">setPermissionRequired</a></li><li data-type="method" id="Command-setTabCompleter-nav"><a href="Command.html#setTabCompleter">setTabCompleter</a></li><li data-type="method" id="Command-setUsage-nav"><a href="Command.html#setUsage">setUsage</a></li></ul></div></li></ul></li><li id="CommandBuilder-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandBuilder.html">CommandBuilder</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandBuilder-build-nav"><a href="CommandBuilder.html#build">build</a></li><li data-type="method" id="CommandBuilder-setAliases-nav"><a href="CommandBuilder.html#setAliases">setAliases</a></li><li data-type="method" id="CommandBuilder-setDescription-nav"><a href="CommandBuilder.html#setDescription">setDescription</a></li><li data-type="method" id="CommandBuilder-setExecutor-nav"><a href="CommandBuilder.html#setExecutor">setExecutor</a></li><li data-type="method" id="CommandBuilder-setPermissionRequired-nav"><a href="CommandBuilder.html#setPermissionRequired">setPermissionRequired</a></li><li data-type="method" id="CommandBuilder-setTabCompleter-nav"><a href="CommandBuilder.html#setTabCompleter">setTabCompleter</a></li><li data-type="method" id="CommandBuilder-setUsage-nav"><a href="CommandBuilder.html#setUsage">setUsage</a></li></ul></div></li></ul></li><li id="CommandManager-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandManager.html">CommandManager</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandManager-clearCommands-nav"><a href="CommandManager.html#clearCommands">clearCommands</a></li><li data-type="method" id="CommandManager-getCommand-nav"><a href="CommandManager.html#getCommand">getCommand</a></li><li data-type="method" id="CommandManager-getCommands-nav"><a href="CommandManager.html#getCommands">getCommands</a></li><li data-type="method" id="CommandManager-hasCommand-nav"><a href="CommandManager.html#hasCommand">hasCommand</a></li><li data-type="method" id="CommandManager-register-nav"><a href="CommandManager.html#register">register</a></li></ul></div></li></ul></li><li id="CommandResult-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="CommandResult.html">CommandResult</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="CommandResult-call-nav"><a href="CommandResult.html#call">call</a></li></ul></div></li></ul></li><li id="ResourceName-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive">arrow_drop_down</i><i class="material-icons if-active">arrow_drop_up</i></a><a href="ResourceName.html">ResourceName</a><div class="collapsible-body"><ul class='methods'><li data-type="method" id="ResourceName-equals-nav"><a href="ResourceName.html#equals">equals</a></li><li data-type="method" id="ResourceName-toString-nav"><a href="ResourceName.html#toString">toString</a></li></ul></div></li></ul></li>
+    <ul id="slide-out" class="sidenav sidenav-fixed sidenav-bg">
+      <li><a href="index.html"><h3 class="grey-text">kimiko.js</h3></a></li><li class="grey-text text-lighten-1"><h4>Classes</h4></li><li id="Command-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive white-text">arrow_drop_down</i><i class="material-icons if-active white-text">arrow_drop_up</i></a><a href="Command.html"><span class="white-text">Command</span></a><div class="collapsible-body"><ul class='methods sidenav-alternate-bg'><li data-type="method" id="Command-addSubCommand-nav"><a href="Command.html#addSubCommand"><span class="white-text text-darken-1">addSubCommand</span></a></li><li data-type="method" id="Command-getAliases-nav"><a href="Command.html#getAliases"><span class="white-text text-darken-1">getAliases</span></a></li><li data-type="method" id="Command-getDescription-nav"><a href="Command.html#getDescription"><span class="white-text text-darken-1">getDescription</span></a></li><li data-type="method" id="Command-getExecutor-nav"><a href="Command.html#getExecutor"><span class="white-text text-darken-1">getExecutor</span></a></li><li data-type="method" id="Command-getParent-nav"><a href="Command.html#getParent"><span class="white-text text-darken-1">getParent</span></a></li><li data-type="method" id="Command-getPermissionRequired-nav"><a href="Command.html#getPermissionRequired"><span class="white-text text-darken-1">getPermissionRequired</span></a></li><li data-type="method" id="Command-getSubCommand-nav"><a href="Command.html#getSubCommand"><span class="white-text text-darken-1">getSubCommand</span></a></li><li data-type="method" id="Command-getSubCommands-nav"><a href="Command.html#getSubCommands"><span class="white-text text-darken-1">getSubCommands</span></a></li><li data-type="method" id="Command-getTabCompleter-nav"><a href="Command.html#getTabCompleter"><span class="white-text text-darken-1">getTabCompleter</span></a></li><li data-type="method" id="Command-getUsage-nav"><a href="Command.html#getUsage"><span class="white-text text-darken-1">getUsage</span></a></li><li data-type="method" id="Command-handleExecution-nav"><a href="Command.html#handleExecution"><span class="white-text text-darken-1">handleExecution</span></a></li><li data-type="method" id="Command-hasParent-nav"><a href="Command.html#hasParent"><span class="white-text text-darken-1">hasParent</span></a></li><li data-type="method" id="Command-hasSubCommand-nav"><a href="Command.html#hasSubCommand"><span class="white-text text-darken-1">hasSubCommand</span></a></li><li data-type="method" id="Command-matchesName-nav"><a href="Command.html#matchesName"><span class="white-text text-darken-1">matchesName</span></a></li><li data-type="method" id="Command-onTabComplete-nav"><a href="Command.html#onTabComplete"><span class="white-text text-darken-1">onTabComplete</span></a></li><li data-type="method" id="Command-removeSubCommand-nav"><a href="Command.html#removeSubCommand"><span class="white-text text-darken-1">removeSubCommand</span></a></li><li data-type="method" id="Command-setAliases-nav"><a href="Command.html#setAliases"><span class="white-text text-darken-1">setAliases</span></a></li><li data-type="method" id="Command-setDescription-nav"><a href="Command.html#setDescription"><span class="white-text text-darken-1">setDescription</span></a></li><li data-type="method" id="Command-setExecutor-nav"><a href="Command.html#setExecutor"><span class="white-text text-darken-1">setExecutor</span></a></li><li data-type="method" id="Command-setParent-nav"><a href="Command.html#setParent"><span class="white-text text-darken-1">setParent</span></a></li><li data-type="method" id="Command-setPermissionRequired-nav"><a href="Command.html#setPermissionRequired"><span class="white-text text-darken-1">setPermissionRequired</span></a></li><li data-type="method" id="Command-setTabCompleter-nav"><a href="Command.html#setTabCompleter"><span class="white-text text-darken-1">setTabCompleter</span></a></li><li data-type="method" id="Command-setUsage-nav"><a href="Command.html#setUsage"><span class="white-text text-darken-1">setUsage</span></a></li></ul></div></li></ul></li><li id="CommandBuilder-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive white-text">arrow_drop_down</i><i class="material-icons if-active white-text">arrow_drop_up</i></a><a href="CommandBuilder.html"><span class="white-text">CommandBuilder</span></a><div class="collapsible-body"><ul class='methods sidenav-alternate-bg'><li data-type="method" id="CommandBuilder-build-nav"><a href="CommandBuilder.html#build"><span class="white-text text-darken-1">build</span></a></li><li data-type="method" id="CommandBuilder-setAliases-nav"><a href="CommandBuilder.html#setAliases"><span class="white-text text-darken-1">setAliases</span></a></li><li data-type="method" id="CommandBuilder-setDescription-nav"><a href="CommandBuilder.html#setDescription"><span class="white-text text-darken-1">setDescription</span></a></li><li data-type="method" id="CommandBuilder-setExecutor-nav"><a href="CommandBuilder.html#setExecutor"><span class="white-text text-darken-1">setExecutor</span></a></li><li data-type="method" id="CommandBuilder-setPermissionRequired-nav"><a href="CommandBuilder.html#setPermissionRequired"><span class="white-text text-darken-1">setPermissionRequired</span></a></li><li data-type="method" id="CommandBuilder-setTabCompleter-nav"><a href="CommandBuilder.html#setTabCompleter"><span class="white-text text-darken-1">setTabCompleter</span></a></li><li data-type="method" id="CommandBuilder-setUsage-nav"><a href="CommandBuilder.html#setUsage"><span class="white-text text-darken-1">setUsage</span></a></li></ul></div></li></ul></li><li id="CommandManager-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive white-text">arrow_drop_down</i><i class="material-icons if-active white-text">arrow_drop_up</i></a><a href="CommandManager.html"><span class="white-text">CommandManager</span></a><div class="collapsible-body"><ul class='methods sidenav-alternate-bg'><li data-type="method" id="CommandManager-clearCommands-nav"><a href="CommandManager.html#clearCommands"><span class="white-text text-darken-1">clearCommands</span></a></li><li data-type="method" id="CommandManager-getCommand-nav"><a href="CommandManager.html#getCommand"><span class="white-text text-darken-1">getCommand</span></a></li><li data-type="method" id="CommandManager-getCommands-nav"><a href="CommandManager.html#getCommands"><span class="white-text text-darken-1">getCommands</span></a></li><li data-type="method" id="CommandManager-hasCommand-nav"><a href="CommandManager.html#hasCommand"><span class="white-text text-darken-1">hasCommand</span></a></li><li data-type="method" id="CommandManager-register-nav"><a href="CommandManager.html#register"><span class="white-text text-darken-1">register</span></a></li></ul></div></li></ul></li><li id="CommandResult-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive white-text">arrow_drop_down</i><i class="material-icons if-active white-text">arrow_drop_up</i></a><a href="CommandResult.html"><span class="white-text">CommandResult</span></a><div class="collapsible-body"><ul class='methods sidenav-alternate-bg'><li data-type="method" id="CommandResult-call-nav"><a href="CommandResult.html#call"><span class="white-text text-darken-1">call</span></a></li></ul></div></li></ul></li><li id="ResourceName-nav"><ul class="collapsible collapsible-accordion"><li><a class="collapsible-header"><i class="material-icons if-unactive white-text">arrow_drop_down</i><i class="material-icons if-active white-text">arrow_drop_up</i></a><a href="ResourceName.html"><span class="white-text">ResourceName</span></a><div class="collapsible-body"><ul class='methods sidenav-alternate-bg'><li data-type="method" id="ResourceName-equals-nav"><a href="ResourceName.html#equals"><span class="white-text text-darken-1">equals</span></a></li><li data-type="method" id="ResourceName-toString-nav"><a href="ResourceName.html#toString"><span class="white-text text-darken-1">toString</span></a></li></ul></div></li></ul></li>
     </ul>
     <main>
       
-        <h1 class="page-title center white-text light">
+        <h1 class="page-title center title-color light">
           Command
         </h1>
       
       
-    <div class="container white-text">
+    <div class="white-text">
       <section>
         <article>
           <div class="container-overview">
             
             
               
-    <h2>Constructor</h2>
+    <h3 class="padding-left">Constructor</h3>
   
-  <h4 class="light" id="Command">
+
+  <h4 class="light padding-left" id="Command">
     <span class="type-signature"></span>new Command<span class="signature">(name, parent<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
   </h4>
+
+  
+    <div class="description margin-bottom container">
+      <p>The Command class, represents an executable command. It handles usage definition, subcommands, tab completion and aliases.</p>
+    </div>
+  
+
+  
+
   
 
 
@@ -63,9 +134,104 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          name
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Name of the Command</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="ResourceName.html">ResourceName</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          parent
+          <span class="param-attributes">
+            
+              <span class="optional-signature">opt</span>
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Parent Command, used by <a href="Command.html#addSubCommand">Command#addSubCommand</a></p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
+  </div>
 
 
 
@@ -85,37 +251,112 @@
 
           </div>
           <div class="container-body">
-            <!-- Extends -->
-            
+            <div class="container">
+              <!-- Extends -->
+              
 
-            <!-- Requirements -->
-            
+              <!-- Requirements -->
+              
 
-            <!-- Member classes -->
-            
+              <!-- Member classes -->
+              
 
-            <!-- Mixins -->
-            
+              <!-- Mixins -->
+              
 
-            <!-- Namespaces -->
-            
+              <!-- Namespaces -->
+              
+            </div>
 
             <!-- Members -->
             
 
             <!-- Methods -->
             
-              <h3>Methods</h3>
+              <h3 class="padding-left">Methods</h3>
               <ul class="methods">
                 
-                  <li>
-                    
-  <h4 class="light" id="addSubCommand">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="addSubCommand">
     <span class="type-signature"></span>addSubCommand<span class="signature">(subCommand)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Adds a subCommand to the command, will do nothing if the subCommand already has a parent or if there is already another subCommand with the same name or alias</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Adds a subCommand to the command, will do nothing if the subCommand already has a parent or if there is already another subCommand with the same name or alias</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          subCommand
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>SubCommand to be added</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
 
 
@@ -124,8 +365,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -134,24 +373,70 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getAliases">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getAliases">
     <span class="type-signature"></span>getAliases<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;String>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns all the aliases</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns all the aliases</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{Array.&lt;String>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -168,22 +453,114 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getDescription">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getDescription">
     <span class="type-signature"></span>getDescription<span class="signature">(sender<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the description of the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the description of the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          sender
+          <span class="param-attributes">
+            
+              <span class="optional-signature">opt</span>
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>If Command#description is a function, it will call this function with <code>sender</code> as argument. Represents the sender/author of the command call</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{*}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{String}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -192,8 +569,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -202,24 +577,81 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getExecutor">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getExecutor">
     <span class="type-signature"></span>getExecutor<span class="signature">()</span><span class="type-signature"> &rarr; <span class="nullable-signature">nullable</span> {<a href="Command.html#executor">Command#executor</a>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the <code>executor</code> of this command, if set</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the <code>executor</code> of this command, if set</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+          <td class="return-name">
+            
+            
+            <span class="return-attributes">
+              
+              
+                <span class="optional-signature">nullable</span>
+              
+            </span>
+          </td>
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{<a href="Command.html#executor">Command#executor</a>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -236,22 +668,81 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getParent">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getParent">
     <span class="type-signature"></span>getParent<span class="signature">()</span><span class="type-signature"> &rarr; <span class="nullable-signature">nullable</span> {<a href="Command.html">Command</a>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the parent command, if set</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the parent command, if set</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+          <td class="return-name">
+            
+            
+            <span class="return-attributes">
+              
+              
+                <span class="optional-signature">nullable</span>
+              
+            </span>
+          </td>
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -268,22 +759,70 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getPermissionRequired">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getPermissionRequired">
     <span class="type-signature"></span>getPermissionRequired<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the permission required for the <code>Command</code></p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the permission required for the <code>Command</code></p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{String}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -300,22 +839,86 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getSubCommand">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getSubCommand">
     <span class="type-signature"></span>getSubCommand<span class="signature">(label)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns, if found, a subCommand matching <code>label</code> (name or alias)</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns, if found, a subCommand matching <code>label</code> (name or alias)</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          label
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="ResourceName.html">ResourceName</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
 
 
@@ -324,8 +927,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -334,24 +935,70 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getSubCommands">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getSubCommands">
     <span class="type-signature"></span>getSubCommands<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="Command.html">Command</a>>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns all the subCommands of a command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns all the subCommands of a command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{Array.&lt;<a href="Command.html">Command</a>>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -368,22 +1015,81 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getTabCompleter">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getTabCompleter">
     <span class="type-signature"></span>getTabCompleter<span class="signature">()</span><span class="type-signature"> &rarr; <span class="nullable-signature">nullable</span> {<a href="Command.html#tabCompleter">Command#tabCompleter</a>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the tab completion callback of the command, if set</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the tab completion callback of the command, if set</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+          <td class="return-name">
+            
+            
+            <span class="return-attributes">
+              
+              
+                <span class="optional-signature">nullable</span>
+              
+            </span>
+          </td>
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{<a href="Command.html#tabCompleter">Command#tabCompleter</a>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -400,22 +1106,114 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="getUsage">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="getUsage">
     <span class="type-signature"></span>getUsage<span class="signature">(sender<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns the usage of the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns the usage of the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          sender
+          <span class="param-attributes">
+            
+              <span class="optional-signature">opt</span>
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>The sender/author-representing object, will be passed to the <a href="Command.html#~usageCallback">Command~usageCallback</a></p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{*}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{String}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -424,8 +1222,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -434,35 +1230,189 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="handleExecution">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="handleExecution">
     <span class="type-signature"></span>handleExecution<span class="signature">(context, label, args)</span><span class="type-signature"> &rarr; {<a href="CommandResult.html">CommandResult</a>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Execution handler; the function you should call when the command has been invoked. It does argument and permission checks and propagates the call to subCommands</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Execution handler; the function you should call when the command has been invoked. It does argument and permission checks and propagates the call to subCommands</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          context
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Context of the call</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html#~Context">Command~Context</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          label
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Name by which the command was invoked</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          args
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Arguments for the command</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{Array.&lt;String>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+        <tr class="no-bottom-line">
+          <td class="return-description second-color">
+            <p>the result of the call. If the arguments are invalid, a <a href="CommandResult.html#.ERROR_USAGE">CommandResult.ERROR_USAGE</a> will be returned and if the permissions are invalid, the return value will be <a href="CommandResult.html#.ERROR_PERMISSION">CommandResult.ERROR_PERMISSION</a>.</p>
+          </td>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{<a href="CommandResult.html">CommandResult</a>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -484,16 +1434,70 @@
 
 
 
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="hasParent">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="hasParent">
     <span class="type-signature"></span>hasParent<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns whether or not the command is a child command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns whether or not the command is a child command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        <h5 class="center second-color italic light">No arguments</h5>
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{boolean}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -510,22 +1514,110 @@
 
 
 
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="hasSubCommand">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="hasSubCommand">
     <span class="type-signature"></span>hasSubCommand<span class="signature">(subCommand)</span><span class="type-signature"> &rarr; {boolean}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns whether or not a subCommand is present in the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns whether or not a subCommand is present in the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          subCommand
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="ResourceName.html">ResourceName</a>}</div>
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{boolean}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -534,8 +1626,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -544,24 +1634,162 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="matchesName">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="matchesName">
     <span class="type-signature"></span>matchesName<span class="signature">(name, aliases<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {boolean}</span>
   </h4>
+
   
-  <div class="description">
-    <p>Returns whether or not the <code>name</code> matches the name and optionally any alias</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Returns whether or not the <code>name</code> matches the name and optionally any alias</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          name
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+          <td class="param-default">
+            
+          </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="2">
+            <p>The name to compare to</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="2">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="ResourceName.html">ResourceName</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          aliases
+          <span class="param-attributes">
+            
+              <span class="optional-signature">opt</span>
+            
+            
+          </span>
+        </td>
+        
+          <td class="param-default">
+            
+              <span class="param-default-label light second-color">=</span>
+              <span class="param-default-value">true</span>
+            
+          </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="2">
+            <p>Whether or not it should search within the aliases aswell</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="2">
+            <div class="param-types second-color">
+              
+                <div>{boolean}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{boolean}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -570,8 +1798,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -580,24 +1806,188 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="onTabComplete">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="onTabComplete">
     <span class="type-signature"></span>onTabComplete<span class="signature">(context, label, args)</span><span class="type-signature"> &rarr; {Array.&lt;String>}</span>
   </h4>
+
   
-  <div class="description">
-    <p>The handler for the tab completion event, it will return all of the possibilities as a String array</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>The handler for the tab completion event, it will return all of the possibilities as a String array</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          context
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Context of the tab completion call</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html#~Context">Command~Context</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          label
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Label of the command</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          args
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>Arguments already typed in</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{Array.&lt;String>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        
+      </tr>
+      
+        <tr class="no-bottom-line">
+          <td class="return-description second-color">
+            <p>Possible values for the completion</p>
+          </td>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <div class="return-types second-color">
+              
+                <div>{Array.&lt;String>}</div>
+              
+            </ul>
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+      
+    </div>
   </div>
 
 
@@ -606,8 +1996,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -616,24 +2004,84 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="removeSubCommand">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="removeSubCommand">
     <span class="type-signature"></span>removeSubCommand<span class="signature">(subCommand)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Removes, if present, a subCommand from the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Removes, if present, a subCommand from the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          subCommand
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
 
 
@@ -642,8 +2090,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -652,24 +2098,88 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setAliases">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setAliases">
     <span class="type-signature"></span>setAliases<span class="signature">(<span class="rest-signature">&hellip;aliases</span>)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Adds aliases to the <code>Command</code></p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Adds aliases to the <code>Command</code></p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+            <span class="rest-signature">&hellip;</span>
+          
+          aliases
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{Array.&lt;String>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
 
 
@@ -678,8 +2188,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -688,35 +2196,87 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setDescription">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setDescription">
     <span class="type-signature"></span>setDescription<span class="signature">(description)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the description of a command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the description of a command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          description
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="Command.html#~descriptionCallback">Command~descriptionCallback</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -738,27 +2298,85 @@
 
 
 
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setExecutor">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setExecutor">
     <span class="type-signature"></span>setExecutor<span class="signature">(executor)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the <code>executor</code> of this command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the <code>executor</code> of this command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          executor
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html#executor">Command#executor</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -780,16 +2398,84 @@
 
 
 
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setParent">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setParent">
     <span class="type-signature"></span>setParent<span class="signature">(parent)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the parent command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the parent command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          parent
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html">Command</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
 
 
@@ -798,8 +2484,6 @@
 
 
 
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
 
 
 
@@ -808,35 +2492,91 @@
 
 
 
-
-
-
-
-
-
-
-
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setPermissionRequired">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setPermissionRequired">
     <span class="type-signature"></span>setPermissionRequired<span class="signature">(permissionRequired)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the required permission for the <code>Command</code></p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the required permission for the <code>Command</code></p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          permissionRequired
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>The required permission</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -858,27 +2598,91 @@
 
 
 
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setTabCompleter">
+                  <li class="">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setTabCompleter">
     <span class="type-signature"></span>setTabCompleter<span class="signature">(tabCompleter)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the tab completer of the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the tab completer of the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          tabCompleter
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+        <tr class="no-bottom-line">
+          <td class="param-description second-color" colspan="1">
+            <p>The tab completer callback to be set</p>
+          </td>
+        </tr>
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{<a href="Command.html#tabCompleter">Command#tabCompleter</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -900,27 +2704,87 @@
 
 
 
+                    </div>
                   </li>
                 
-                  <li>
-                    
-  <h4 class="light" id="setUsage">
+                  <li class="main-alternate-bg">
+                    <div class="method-container">
+                      
+
+  <h4 class="light padding-left" id="setUsage">
     <span class="type-signature"></span>setUsage<span class="signature">(usage)</span><span class="type-signature"></span>
   </h4>
+
   
-  <div class="description">
-    <p>Sets the usage for the command</p>
+
+  
+    <div class="description margin-bottom container">
+      <p>Sets the usage for the command</p>
+    </div>
+  
+
+  
+
+
+
+
+
+
+
+  <div class="params-returns container">
+    <div class="params">
+      <!-- <h5 class="center white-text text-darken-2">Arguments</h5> -->
+      
+        
+
+<table>
+  <tbody>
+    
+      <tr class="no-bottom-line">
+        <td class="param-name">
+          
+          usage
+          <span class="param-attributes">
+            
+            
+          </span>
+        </td>
+        
+      </tr>
+
+      
+
+      
+
+      
+        <tr>
+          <td colspan="1">
+            <div class="param-types second-color">
+              
+                <div>{String}</div>
+              
+                <div>{<a href="Command.html#~usageCallback">Command~usageCallback</a>}</div>
+              
+            </div>
+          </td>
+        </tr>
+      
+
+    
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="arrow">
+      <i class="material-icons">arrow_forward</i>
+    </div>
+    <div class="returns">
+      
+        <h5 class="centere second-color italic light">No value returned</h5>
+      
+    </div>
   </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  TODO: params.tmpl
-
 
 
 
@@ -942,6 +2806,7 @@
 
 
 
+                    </div>
                   </li>
                 
               </ul>
@@ -957,8 +2822,8 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
-		<script>M.AutoInit();</script>
+    <?= cfg.fontAwesomeJS ? `<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>` : '' ?>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js" defer></script>
+    <script defer>M.AutoInit();</script>
   </body>
 </html>

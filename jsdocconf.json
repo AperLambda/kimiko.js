@@ -9,6 +9,11 @@
   },
   "materialize": {
     "header": "header.html",
-    "name": "kimiko.js"
+    "name": "kimiko.js",
+    "mainBG": "#262A32",
+    "mainBGAlt": "#24272E",
+    "navBG": "#212329",
+    "sidenavBG": "#22252B",
+    "sidenavBGAlt": "#24272E"
   }
 }

@@ -2,12 +2,6 @@ header, main, footer {
   padding-left: 300px;
 }
 
-@media only screen and (max-width: 992px) {
-  header, main, footer {
-    padding-left: 0;
-  }
-}
-
 ul.sidenav > li > h3,
 ul.sidenav > li > h4 {
   padding-left: 16px;
@@ -29,14 +23,124 @@ li:not(.active) > a > .if-active {
 }
 
 span.signature-attributes,
-span.nullable-signature {
+span.nullable-signature,
+span.optional-signature {
   padding-left: 0.3em;
   padding-right: 0.1em;
-  color: #a0a0a0;
+  opacity: 0.4;
   font-style: italic;
 }
 
 span.rest-signature {
   color: #d0d0d0;
   font-weight: 400;
+}
+
+.method-container {
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+
+.blue-grey.darken-3plus {
+  background: #2A383E !important;
+}
+
+.blue-grey.darken-4plus {
+  background: #212c31 !important;
+}
+
+.params-returns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.params-returns .arrow {
+  flex: .15;
+  font-size: 250%;
+  text-align: center;
+}
+
+.params-returns .params, .params-returns .returns {
+  flex: .425;
+}
+
+@media only screen and (max-width: 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+
+  .params-returns {
+
+  }
+}
+
+.param-name {
+  font-weight: 600;
+}
+
+.param-attributes, .return-attributes {
+  font-weight: 400;
+}
+
+.param-types {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.return-types {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.param-types > div,
+.return-types > div {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+h2.padding-left {
+  padding-left: 4.5%;
+}
+
+h3.padding-left {
+  padding-left: 4.5%;
+}
+
+h4.padding-left {
+  padding-left: 11%;
+}
+
+h5.padding-left {
+  padding-left: 14%;
+}
+
+.no-bottom-line {
+  border-bottom: none;
+}
+
+td.param-description,
+td.return-description {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+td.param-description > p:nth-child(1),
+td.return-description > p:nth-child(1) {
+  margin-top: 0;
+}
+
+td.param-description > p:nth-last-child(1),
+td.return-description > p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.description.margin-bottom {
+  margin-bottom: 2.5em;
 }
