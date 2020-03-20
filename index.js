@@ -22,3 +22,5 @@ console.log(parsed_cmd = parse_command_syntax(test_command_syntax));
 let cmd = new kimiko.Command(parsed_cmd.name);
 cmd.arguments = parsed_cmd.args;
 console.log(parse_arguments(cmd, '"this is an event" 23:35:20 yes 5050 0o56'))
+
+

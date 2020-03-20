@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/AperLambda/kimiko.js#readme",
   "dependencies": {
-    "jsdoc": "^3.5.5",
-    "lambdacommonjs": "^1.1.3"
+    "jsdoc": "^3.6.3",
+    "lambdacommonjs": "^1.1.4"
   }
 }
