@@ -6,9 +6,9 @@
 
 A command system written in JavaScript, based on [kimiko](https://github.com/AperLambda/kimiko/). It has the advantage to be very flexible.
 
-It handles command usage, description, aliases and subCommand propagation.
+It handles command usage, description, aliases and sub command propagation.
 
-The command names are encoded as ResourceNames: they are of the form `domain:name`. This allows for several commands of different sources to have the same name.
+The command names are encoded as Identifiers: they are of the form `namespace:path`. This allows for several commands of different sources to have the same name.
 
 ## Installation & Usage
 
@@ -21,7 +21,7 @@ npm i kimiko
 Once it has been installed, you just need to require it in you code:
 
 ```js
-const kimiko = require("kimiko");
+import * as kimiko from "kimiko";
 ```
 
 All of the classes will be contained in `kimiko`. All you then have to do is to implement it.
