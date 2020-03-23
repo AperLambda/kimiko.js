@@ -31,11 +31,7 @@ let result = new TestUnit()
         res["date"] = "23:35:20";
         res["repeat"] = true;
         res["users"] = [5050, 0o56];
-        section.add("parse_arguments", () => {
-            let command = new kimiko.Command(parsed_cmd.name);
-            command.arguments = parsed_cmd.args;
-            return compareMap(kimiko.parse_arguments(command, test_message), res);
-        }, true);
+        section.add("parse_arguments", () => compareMap(kimiko.parse_arguments(parsed_cmd.args, test_message), res), true);
     })
     .test();
 
