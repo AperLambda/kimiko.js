@@ -2,7 +2,7 @@
   "name": "kimiko",
   "version": "2.0.0",
   "description": "A command system, based on https://github.com/AperLambda/kimiko",
-  "main": "index.js",
+  "main": "./lib/kimiko.mjs",
   "type": "module",
   "scripts": {
     "test": "node test/test.mjs"
